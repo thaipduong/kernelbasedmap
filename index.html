@@ -208,6 +208,14 @@
              <center><h1>Overview</h1></center>
                 <tr>
                     <br>
+            <td width=600px>
+                      <center>
+                          <span style="font-size:28px">Map updates
+                          <br>
+                          <br>
+                    </center>
+                    </td>
+            <br>
             <table align=center width=600px>
                 <tr>
                     <td width=600px>
@@ -218,17 +226,60 @@
                 </tr>
                     <td width=600px>
                       <center>
-                          <span style="font-size:14px"><i>Given a streaming local depth observation (e.g. lidar scan), we sample occupied and free points to generate a training dataset. The dataset is used to train a kernel perceptron model and the resulting support vectors are stored as a map. Upon receiving new observation, the map as a set of support vectors is updated.</i>
+                          <span style="font-size:18px"><i>Given a streaming local depth observation (e.g. lidar scan), we sample occupied and free points to generate a training dataset. The dataset is used to train a kernel perceptron model and the resulting support vectors are stored as a map. Upon receiving new observations, the map as a set of support vectors is updated.</i>
                     </center>
                     </td>
                 </tr>
             </table>
               </tr>
             </table>
-          <br>
-            Collision Checking: TBD
             <br>
+
+<td width=600px>
+                      <center>
+                          <span style="font-size:28px"> Collision checking for linear and polynomial trajectories
+                    </center>
+                    </td>
           <br>
+              <table align=center width=600px>
+                <tr>
+                    <td width=600px>
+                      <center>
+                          <a href="./resources/images/collision_checking.gif"><img src = "./resources/images/collision_checking.gif" height="450px"></img></href></a><br>
+                    </center>
+                    </td>
+                </tr>
+                    <td width=600px>
+                      <center>
+                          <span style="font-size:18px"><i>Using the support vectors, we proposed an "inflated boundary" of the obstacles. For line segments, the intersection with the inflated boundary can be computed efficiently regardless of the segment length. For polynomial curves, a safety ball can be calculated efficiently using the "inflated boundary" and collision checking is performed by iteratively placing safety balls along the curves. </i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+          <td width=600px>
+                      <center>
+                          <span style="font-size:28px"> Autonomous Navigation and Mapping
+                    </center>
+                    </td>
+          <br>
+              <table align=center width=600px>
+                <tr>
+                    <td width=600px>
+                      <center>
+                          <a href="./resources/images/sim_long.gif"><img src = "./resources/images/sim_long.gif" height="450px"></img></href></a><br>
+                    </center>
+                    </td>
+                </tr>
+                    <td width=600px>
+                      <center>
+                          <span style="font-size:18px"><i>Autonomous mapping and navigation in an unknown simulated warehouse environment: Given the current kernel-based map, an A* planner is used with our collision-checking algorithms to generate a robot path. The robot follows the path for some time and updates the map estimate with new observations. Using the updated map, the robot re-plans the path and follows the new path instead. This process is repeated until the goal is reached</i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+            <br>
 
                 <hr>
                 <center><h1>Results</h1></center>
@@ -237,7 +288,7 @@
                         <td width=600px>
                           <center>
                             <div class = "video">
-                              <iframe width="800" height="450" src="https://www.youtube.com/embed/FY_qDmXIaQE" frameborder="0" allowfullscreen></iframe>
+                              <iframe width="800" height="480" src="https://www.youtube.com/embed/FY_qDmXIaQE" frameborder="0" allowfullscreen></iframe>
                            </div>
                         </center>
                         </td>
