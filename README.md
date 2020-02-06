@@ -1,1 +1,1 @@
-# kernelbasedmap.github.io
+# https://thaipduong.github.io/kernelbasedmap/
