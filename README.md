@@ -1,1 +1,0 @@
-# kernelbasedmap.github.io
