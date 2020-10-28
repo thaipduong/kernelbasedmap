@@ -123,6 +123,15 @@
         <meta property="og:title" content="Kernel-basedMap" />
         <meta property="og:image" content="" />
         <meta property="og:url" content="" />
+      <style>
+code {
+  font-family: Consolas,"courier new";
+  color: darkcyan;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+</style>
   </head>
 
   <body>
@@ -202,6 +211,11 @@
             <br>
             This paper focuses on real-time occupancy mapping and collision checking onboard an autonomous robot navigating in an unknown environment. We propose a new map representation, in which occupied and free space are separated by the decision boundary of a kernel perceptron classifier. We develop an online training algorithm that maintains a very sparse set of support vectors to represent obstacle boundaries in configuration space. We also derive conditions that allow complete (without sampling) collision-checking for piecewise-linear and piecewise-polynomial robot trajectories. We demonstrate the effectiveness of our mapping and collision checking algorithms for autonomous navigation of an Ackermann-drive robot in unknown environments.
             <br><br>
+      <span style="font-size:14pt;color:red"> Please check out our Bayesian version of this mapping method here: 
+                      <a href="https://thaipduong.github.io/sbkm/">https://thaipduong.github.io/sbkm/</a> &nbsp; &nbsp;
+                   <!--    <a href="./resources/bibtex.txt">[Bibtex]</a> -->
+                  <!-- [hosted on <a href="#">arXiv</a>]</a> -->
+      </span>
 
       <hr>
                <!-- <table align=center width=550px> -->
@@ -219,7 +233,9 @@
                    <!--    <a href="./resources/bibtex.txt">[Bibtex]</a> -->
                   <!-- [hosted on <a href="#">arXiv</a>]</a> -->
                     </td>
+                      
               </tr>
+                
             </table>
       
       
@@ -334,11 +350,71 @@
           <hr>
 
 
+           <center><h1>Citation</h1></center>
+            <table align=center width=800px>
+              <tr><center> <br>
+                          <span style="font-size:18px"><i>If you find our papers/code useful for your research, please cite our work as follows. </i>
+              <br>
+              </center></tr>
+              <tr><left> <br>
+                          <span style="font-size:18px">1. T. Duong, M. Yip, N. Atanasov. <a href='https://thaipduong.github.io/sbkm/'>Autonomous Navigation in Unknown Environments with Sparse <i>Bayesian</i> Kernel-based Occupancy Mapping</a>. In Submission. 2020
+                          
+              <br><br>
+                              <code>@misc{duong2020autonomousbayesian,
+                                  <br>
+                                    title={Autonomous Navigation in Unknown Environments with Sparse Bayesian Kernel-based Occupancy Mapping},
+                                  <br>
+                                    author={Duong, Thai and Yip, Michael and Atanasov, Nikolay},
+                                  <br>
+                                    url = {https://thaipduong.github.io/sbkm},
+                                  <br>
+                                    pdf = {https://arxiv.org/pdf/2009.07207.pdf}
+                                  <br>
+                                    eprint={2009.07207},
+                                  <br>
+                                    archivePrefix={arXiv},
+                                  <br>
+                                    primaryClass={cs.RO}
+                                  <br>
+                                    year={2020}
+                                  <br>
+                                   }
+                             </code>
+              </left></tr>
+                  <br><br>
+              <tr><left> <br>
+                          <span style="font-size:18px">2.  T. Duong, N. Das, M. Yip, N. Atanasov. <a href='https://thaipduong.github.io/kernelbasedmap/'>Autonomous Navigation in Unknown Environments using Sparse Kernel-based Occupancy Mapping</a>. IEEE International Conference on Robotics and Automation (ICRA), 2020.
+
+                          
+              <br><br>
+                              <code>@inproceedings{duong2020autonomous,
+                                  <br>
+                                  title={Autonomous Navigation in Unknown Environments using Sparse Kernel-based Occupancy Mapping},
+                                  <br>
+                                  author={Duong, Thai and Das, Nikhil and Yip, Michael and Atanasov, Nikolay},
+                                  <br>
+                                  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+                                  <br>
+                                  year={2020},
+                                  <br>
+                                  url = {https://thaipduong.github.io/kernelbasedmap},
+                                  <br>
+                                  pdf = {https://arxiv.org/pdf/2002.01921.pdf}
+                                  <br>
+                                  }
+                              </code>
+              </left></tr>
+          </table>
+            <br>
+          <hr>
+
             <table align=center width=1100px>
                 <tr>
                     <td>
                       <left>
                 <center><h1>Acknowledgements</h1></center>
+                We gratefully acknowledge support from ARL DCIST CRA W911NF-17-2-0181 and ONR SAI N00014-18-1-2828.
+                <br>
                 This webpage template was borrowed from <a href="https://akanazawa.github.io/cmr/">https://akanazawa.github.io/cmr/</a>.
             </left>
         </td>
